@@ -7,6 +7,16 @@
 // *****
 // *****
 // *****
+function makeSquare (size) {
+    var string = ''
+    for (let int = 0; int < size; int++) {
+        for (let i = 0; i < size; i++) {
+        string = string + '*'
+        }
+    string = string + '\n'
+    }
+return string
+}
 
 
 
@@ -20,6 +30,24 @@
 // *    *
 // ******
 
+function makeBox (width, height) {
+    var fullString = ''
+    var hollowString = ''
+    for (let i = 0; i < width; i++) {
+        var fullString = fullString + '*'
+    }
+    fullString = fullString + '\n'
+    for (let i = 0; i < height; i++) {
+        hollowString = hollowString + '*'
+        hollowString = hollowString + '\n'
+    }
+    for (let i = 0; i < width; i++) {
+        var fullString = fullString + '*'
+    }
+return fullString
+}
+
+console.log(makeBox(6, 4))
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
